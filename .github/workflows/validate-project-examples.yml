@@ -1,0 +1,29 @@
+name: Validate project examples
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+	runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Deno stable
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: vx.x.x
+
+      - name: Open the project examples directory
+        run: cd Project-Examples
+
+      - name: Run validation
+        run: deno run --allow-read=. Project-Examples/validate.mjs
