@@ -1,0 +1,120 @@
+{
+	"name": "Receiver",
+	"declarations": "",
+	"locations": [
+		{
+			"id": "L2",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 20,
+			"y": 50,
+			"color": "5",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L3",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 20,
+			"y": 160,
+			"color": "5",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L4",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 170,
+			"y": 50,
+			"color": "5",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E1",
+			"group": "",
+			"sourceLocation": "L3",
+			"targetLocation": "L4",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "c",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 90,
+					"y": 100,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": 10
+				}
+			]
+		},
+		{
+			"id": "E2",
+			"group": "",
+			"sourceLocation": "L4",
+			"targetLocation": "L2",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "c",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 110,
+					"y": 50,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		},
+		{
+			"id": "E3",
+			"group": "",
+			"sourceLocation": "L2",
+			"targetLocation": "L3",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "c",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 20,
+					"y": 100,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 190,
+	"height": 180,
+	"color": "5",
+	"includeInPeriodicCheck": false
+}

@@ -1,0 +1,50 @@
+[
+	{
+		"query": "specification: (Administration 1 || Coffee Machine 1 || Researcher)",
+		"comment": "",
+		"isPeriodic": false,
+		"engine": "Reveaal"
+	},
+	{
+		"query": "specification: Specification",
+		"comment": "",
+		"isPeriodic": false,
+		"engine": "Reveaal"
+	},
+	{
+		"query": "consistency: (Administration 1 || Coffee Machine 1 || Researcher)",
+		"comment": "",
+		"isPeriodic": false,
+		"engine": "Reveaal"
+	},
+	{
+		"query": "consistency: (Administration 1 || Coffee Machine 1 || Researcher)",
+		"comment": "",
+		"isPeriodic": false,
+		"engine": "Reveaal"
+	},
+	{
+		"query": "refinement: (Administration 1 || Coffee Machine 2 || Researcher) <= Specification",
+		"comment": "",
+		"isPeriodic": false,
+		"engine": "Reveaal"
+	},
+	{
+		"query": "refinement: Coffee Machine 3 <= Coffee Machine 3",
+		"comment": "",
+		"isPeriodic": false,
+		"engine": "Reveaal"
+	},
+	{
+		"query": "refinement: (Half Administration 1 && Half Administration 2) <= Administration 2",
+		"comment": "",
+		"isPeriodic": false,
+		"engine": "Reveaal"
+	},
+	{
+		"query": "refinement: Administration 2 <= (Half Administration 1 && Half Administration 2)",
+		"comment": "",
+		"isPeriodic": false,
+		"engine": "Reveaal"
+	}
+]

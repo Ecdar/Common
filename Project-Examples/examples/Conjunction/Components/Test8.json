@@ -1,0 +1,281 @@
+{
+	"name": "Test8",
+	"declarations": "clock z;",
+	"locations": [
+		{
+			"id": "L20",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 230,
+			"y": 110,
+			"color": "2",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L21",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 130,
+			"y": 220,
+			"color": "2",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L22",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 310,
+			"y": 220,
+			"color": "2",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L23",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 230,
+			"y": 310,
+			"color": "2",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E11",
+			"group": "",
+			"sourceLocation": "L20",
+			"targetLocation": "L21",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "z > 10",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 200,
+					"y": 150,
+					"propertyType": "GUARD",
+					"propertyX": -60,
+					"propertyY": -10
+				},
+				{
+					"x": 160,
+					"y": 190,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		},
+		{
+			"id": "E12",
+			"group": "",
+			"sourceLocation": "L20",
+			"targetLocation": "L22",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "z <= 10",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 260,
+					"y": 150,
+					"propertyType": "GUARD",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 280,
+					"y": 180,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		},
+		{
+			"id": "E13",
+			"group": "",
+			"sourceLocation": "L21",
+			"targetLocation": "L23",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "z <= 10",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 160,
+					"y": 250,
+					"propertyType": "GUARD",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 200,
+					"y": 280,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -20,
+					"propertyY": 10
+				}
+			]
+		},
+		{
+			"id": "E14",
+			"group": "",
+			"sourceLocation": "L22",
+			"targetLocation": "L23",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "z >10",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 280,
+					"y": 250,
+					"propertyType": "GUARD",
+					"propertyX": 10,
+					"propertyY": 0
+				},
+				{
+					"x": 260,
+					"y": 280,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E15",
+			"group": "",
+			"sourceLocation": "L22",
+			"targetLocation": "L22",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "z <= 10",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 350,
+					"y": 210,
+					"propertyType": "GUARD",
+					"propertyX": -30,
+					"propertyY": -30
+				},
+				{
+					"x": 370,
+					"y": 220,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 350,
+					"y": 230,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E16",
+			"group": "",
+			"sourceLocation": "L21",
+			"targetLocation": "L21",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "z > 10",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 90,
+					"y": 210,
+					"propertyType": "GUARD",
+					"propertyX": -20,
+					"propertyY": -30
+				},
+				{
+					"x": 70,
+					"y": 210,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -30,
+					"propertyY": 0
+				},
+				{
+					"x": 80,
+					"y": 230,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E17",
+			"group": "",
+			"sourceLocation": "L23",
+			"targetLocation": "L23",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 260,
+					"y": 350,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 270,
+					"y": 320,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 450,
+	"height": 600,
+	"color": "2",
+	"includeInPeriodicCheck": true
+}

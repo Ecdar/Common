@@ -1,0 +1,141 @@
+{
+	"name": "T1",
+	"declarations": "clock x;",
+	"locations": [
+		{
+			"id": "L24",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 50,
+			"y": 210,
+			"color": "0",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L25",
+			"nickname": "",
+			"invariant": "x <= 3",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 150,
+			"y": 210,
+			"color": "0",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": -20,
+			"invariantY": 20
+		},
+		{
+			"id": "L26",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 260,
+			"y": 210,
+			"color": "0",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L32",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 380,
+			"y": 210,
+			"color": "0",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E21",
+			"group": "",
+			"sourceLocation": "L24",
+			"targetLocation": "L25",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "ro",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 90,
+					"y": 210,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -10,
+					"propertyY": 10
+				}
+			]
+		},
+		{
+			"id": "E22",
+			"group": "",
+			"sourceLocation": "L25",
+			"targetLocation": "L26",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "i",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 200,
+					"y": 210,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -20,
+					"propertyY": 10
+				}
+			]
+		},
+		{
+			"id": "E23",
+			"group": "",
+			"sourceLocation": "L26",
+			"targetLocation": "L32",
+			"status": "INPUT",
+			"select": "",
+			"guard": "x <= 5",
+			"update": "",
+			"sync": "ri",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 300,
+					"y": 210,
+					"propertyType": "GUARD",
+					"propertyX": -20,
+					"propertyY": 10
+				},
+				{
+					"x": 340,
+					"y": 210,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -10,
+					"propertyY": 10
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 450,
+	"height": 600,
+	"color": "0",
+	"includeInPeriodicCheck": false
+}

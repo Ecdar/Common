@@ -1,0 +1,141 @@
+{
+	"name": "Coffee Machine 1",
+	"declarations": "",
+	"locations": [
+		{
+			"id": "L10",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 110,
+			"y": 150,
+			"color": "3",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L11",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 110,
+			"y": 100,
+			"color": "3",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E21",
+			"group": "",
+			"sourceLocation": "L11",
+			"targetLocation": "L10",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 150,
+					"y": 100,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 20,
+					"propertyY": -7.5
+				}
+			]
+		},
+		{
+			"id": "E22",
+			"group": "",
+			"sourceLocation": "L10",
+			"targetLocation": "L10",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 90,
+					"y": 205,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -45,
+					"propertyY": -7.5
+				},
+				{
+					"x": 130,
+					"y": 205,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E23",
+			"group": "",
+			"sourceLocation": "L11",
+			"targetLocation": "L11",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "tea",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 130,
+					"y": 55,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 20,
+					"propertyY": -7.5
+				},
+				{
+					"x": 85,
+					"y": 55,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E24",
+			"group": "",
+			"sourceLocation": "L10",
+			"targetLocation": "L11",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "cof",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 61,
+					"y": 101,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -45,
+					"propertyY": -7.5
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 438,
+	"y": 487,
+	"width": 230,
+	"height": 240,
+	"color": "3",
+	"includeInPeriodicCheck": false
+}
