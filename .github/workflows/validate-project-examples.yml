@@ -22,8 +22,5 @@ jobs:
         with:
           deno-version: vx.x.x
 
-      - name: Open the project examples directory
-        run: cd Project-Examples
-
       - name: Run validation
-        run: deno run --allow-read=. validate.mjs
+        run: cd Project-Examples && deno run --allow-read=. validate.mjs
