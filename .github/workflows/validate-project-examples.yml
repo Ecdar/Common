@@ -26,4 +26,4 @@ jobs:
         run: cd Project-Examples
 
       - name: Run validation
-        run: deno run --allow-read=. Project-Examples/validate.mjs
+        run: deno run --allow-read=. validate.mjs
