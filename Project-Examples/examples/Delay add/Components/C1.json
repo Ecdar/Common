@@ -1,0 +1,71 @@
+{
+	"name": "C1",
+	"declarations": "clock x;",
+	"locations": [
+		{
+			"id": "L10",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 110,
+			"y": 260,
+			"color": "4",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L11",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 270,
+			"y": 260,
+			"color": "4",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E81",
+			"group": "",
+			"sourceLocation": "L10",
+			"targetLocation": "L11",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "x <= 5",
+			"update": "",
+			"sync": "o",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 210,
+					"y": 260,
+					"propertyType": "GUARD",
+					"propertyX": -10,
+					"propertyY": 10
+				},
+				{
+					"x": 170,
+					"y": 260,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -20,
+					"propertyY": 10
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 450,
+	"height": 600,
+	"color": "4",
+	"includeInPeriodicCheck": false
+}

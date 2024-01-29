@@ -1,0 +1,32 @@
+[
+	{
+		"query": "consistency: Alarm",
+		"comment": "",
+		"isPeriodic": false
+	},
+	{
+		"query": "specification: Alarm",
+		"comment": "",
+		"isPeriodic": false
+	},
+	{
+		"query": "E<> Alarm.L11",
+		"comment": "",
+		"isPeriodic": false
+	},
+	{
+		"query": "E<> Alarm.L12",
+		"comment": "",
+		"isPeriodic": false
+	},
+	{
+		"query": "E<> Alarm.L9",
+		"comment": "",
+		"isPeriodic": false
+	},
+	{
+		"query": "specification: (Alarm : A[] not Alarm.L7 || Alarm.x<=30)",
+		"comment": "",
+		"isPeriodic": false
+	}
+]

@@ -1,0 +1,113 @@
+{
+	"name": "AA",
+	"declarations": "",
+	"locations": [
+		{
+			"id": "L4",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 230,
+			"y": 300,
+			"color": "0",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E31",
+			"group": "",
+			"sourceLocation": "L4",
+			"targetLocation": "L4",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "good",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 200,
+					"y": 350,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 170,
+					"y": 320,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E32",
+			"group": "",
+			"sourceLocation": "L4",
+			"targetLocation": "L4",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "bad",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 200,
+					"y": 250,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 160,
+					"y": 280,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E33",
+			"group": "",
+			"sourceLocation": "L4",
+			"targetLocation": "L4",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "meh",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 270,
+					"y": 290,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 270,
+					"y": 310,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 257,
+	"y": 40,
+	"width": 450,
+	"height": 600,
+	"color": "0",
+	"includeInPeriodicCheck": false
+}

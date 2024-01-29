@@ -1,0 +1,239 @@
+{
+	"name": "Half Administration 2",
+	"declarations": "clock y;",
+	"locations": [
+		{
+			"id": "L14",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 76.89114489105513,
+			"y": 119.0376235539684,
+			"color": "1",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L15",
+			"nickname": "",
+			"invariant": "y<=2",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 261.8374549289125,
+			"y": 119.90830522533889,
+			"color": "1",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": -40.190012356271055,
+			"invariantY": -34.49605273874029
+		}
+	],
+	"edges": [
+		{
+			"id": "E30",
+			"group": "",
+			"sourceLocation": "L14",
+			"targetLocation": "L15",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "y=0",
+			"sync": "pub",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 142.66233599965273,
+					"y": 141.40845647420008,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -8.372039554055217,
+					"propertyY": 10.042224968060236
+				},
+				{
+					"x": 189.4275275917933,
+					"y": 142.45857596477973,
+					"propertyType": "UPDATE",
+					"propertyX": -11.712410382065254,
+					"propertyY": 7.815311082720207
+				}
+			]
+		},
+		{
+			"id": "E31",
+			"group": "",
+			"sourceLocation": "L15",
+			"targetLocation": "L14",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "patent",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 190.9893984400012,
+					"y": 96.26909353541649,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				},
+				{
+					"x": 144.97369982111329,
+					"y": 95.73560934069943,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -17.153020191234617,
+					"propertyY": -27.2585826113852
+				}
+			]
+		},
+		{
+			"id": "E32",
+			"group": "",
+			"sourceLocation": "L15",
+			"targetLocation": "L15",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 274.74777218976817,
+					"y": 175.58115235883952,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -14.348265350529463,
+					"propertyY": 11.155681910730248
+				},
+				{
+					"x": 298.1092555018084,
+					"y": 158.83707325072905,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E33",
+			"group": "",
+			"sourceLocation": "L15",
+			"targetLocation": "L15",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "pub",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 318.1092555018084,
+					"y": 109.45270297499508,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -11.813536603056452,
+					"propertyY": -29.54883394881558
+				},
+				{
+					"x": 318.4381828479714,
+					"y": 135.13388825093105,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E34",
+			"group": "",
+			"sourceLocation": "L15",
+			"targetLocation": "L15",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "grant",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 274.48608423897133,
+					"y": 63.68706776293859,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -16.124013184685072,
+					"propertyY": -27.697180385037715
+				},
+				{
+					"x": 299.98169335779573,
+					"y": 75.7917429432573,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E35",
+			"group": "",
+			"sourceLocation": "L14",
+			"targetLocation": "L14",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "grant",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 66.4508256860921,
+					"y": 176.24719226370794,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -16.51439543828484,
+					"propertyY": 10.263631624674183
+				},
+				{
+					"x": 34.507844945498945,
+					"y": 156.0804241865535,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E36",
+			"group": "",
+			"sourceLocation": "L14",
+			"targetLocation": "L14",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 70.9349255784252,
+					"y": 62.04308398261528,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -12.676625902434262,
+					"propertyY": -26.05200707028724
+				},
+				{
+					"x": 35.32953248148583,
+					"y": 81.1907352204371,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 682,
+	"y": 487,
+	"width": 355.0582859210015,
+	"height": 239.44828437149366,
+	"color": "1",
+	"includeInPeriodicCheck": false
+}

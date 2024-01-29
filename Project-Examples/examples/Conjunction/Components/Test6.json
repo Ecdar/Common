@@ -1,0 +1,134 @@
+{
+	"name": "Test6",
+	"declarations": "clock x;",
+	"locations": [
+		{
+			"id": "L16",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 220,
+			"y": 130,
+			"color": "9",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L17",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 220,
+			"y": 260,
+			"color": "9",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E31",
+			"group": "",
+			"sourceLocation": "L16",
+			"targetLocation": "L16",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "x <= 10",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 260,
+					"y": 110,
+					"propertyType": "GUARD",
+					"propertyX": -10,
+					"propertyY": -30
+				},
+				{
+					"x": 280,
+					"y": 120,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 270,
+					"y": 140,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E32",
+			"group": "",
+			"sourceLocation": "L16",
+			"targetLocation": "L17",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "x > 10",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 220,
+					"y": 170,
+					"propertyType": "GUARD",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 220,
+					"y": 200,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		},
+		{
+			"id": "E33",
+			"group": "",
+			"sourceLocation": "L17",
+			"targetLocation": "L17",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 260,
+					"y": 250,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 260,
+					"y": 270,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 450,
+	"height": 600,
+	"color": "9",
+	"includeInPeriodicCheck": true
+}

@@ -1,0 +1,239 @@
+{
+	"name": "Test4",
+	"declarations": "clock x;",
+	"locations": [
+		{
+			"id": "L7",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 220,
+			"y": 160,
+			"color": "0",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L8",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 130,
+			"y": 310,
+			"color": "0",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L9",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 310,
+			"y": 310,
+			"color": "0",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E51",
+			"group": "",
+			"sourceLocation": "L7",
+			"targetLocation": "L8",
+			"status": "INPUT",
+			"select": "",
+			"guard": "x <= 5",
+			"update": "",
+			"sync": "a",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 180,
+					"y": 220,
+					"propertyType": "GUARD",
+					"propertyX": -50,
+					"propertyY": -10
+				},
+				{
+					"x": 160,
+					"y": 260,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		},
+		{
+			"id": "E52",
+			"group": "",
+			"sourceLocation": "L7",
+			"targetLocation": "L9",
+			"status": "INPUT",
+			"select": "",
+			"guard": "x > 5",
+			"update": "",
+			"sync": "a",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 260,
+					"y": 220,
+					"propertyType": "GUARD",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 280,
+					"y": 260,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		},
+		{
+			"id": "E53",
+			"group": "",
+			"sourceLocation": "L8",
+			"targetLocation": "L9",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "a",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 220,
+					"y": 290,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -10,
+					"propertyY": -30
+				}
+			]
+		},
+		{
+			"id": "E54",
+			"group": "",
+			"sourceLocation": "L9",
+			"targetLocation": "L8",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "a",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 220,
+					"y": 320,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -30,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E55",
+			"group": "",
+			"sourceLocation": "L7",
+			"targetLocation": "L7",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 260,
+					"y": 150,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 260,
+					"y": 170,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E56",
+			"group": "",
+			"sourceLocation": "L9",
+			"targetLocation": "L9",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 350,
+					"y": 300,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 350,
+					"y": 320,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E57",
+			"group": "",
+			"sourceLocation": "L8",
+			"targetLocation": "L8",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 90,
+					"y": 280,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 90,
+					"y": 310,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 450,
+	"height": 600,
+	"color": "0",
+	"includeInPeriodicCheck": false
+}
