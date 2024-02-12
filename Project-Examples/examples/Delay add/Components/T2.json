@@ -1,0 +1,64 @@
+{
+	"name": "T2",
+	"declarations": "clock x;",
+	"locations": [
+		{
+			"id": "L27",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 140,
+			"y": 230,
+			"color": "7",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": -60,
+			"invariantY": 30
+		},
+		{
+			"id": "L30",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 260,
+			"y": 230,
+			"color": "7",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E11",
+			"group": "",
+			"sourceLocation": "L27",
+			"targetLocation": "L30",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "i",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 200,
+					"y": 230,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -10,
+					"propertyY": 10
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 450,
+	"height": 600,
+	"color": "7",
+	"includeInPeriodicCheck": false
+}

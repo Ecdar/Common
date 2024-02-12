@@ -1,0 +1,92 @@
+{
+	"name": "D1",
+	"declarations": "clock x;",
+	"locations": [
+		{
+			"id": "L14",
+			"nickname": "",
+			"invariant": "x <= 6",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 340,
+			"y": 260,
+			"color": "7",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": -20,
+			"invariantY": 30
+		},
+		{
+			"id": "L16",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 90,
+			"y": 260,
+			"color": "7",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E61",
+			"group": "",
+			"sourceLocation": "L14",
+			"targetLocation": "L14",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "o",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 340,
+					"y": 200,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 410,
+					"y": 180,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E62",
+			"group": "",
+			"sourceLocation": "L16",
+			"targetLocation": "L14",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "i",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 180,
+					"y": 260,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 450,
+	"height": 600,
+	"color": "7",
+	"includeInPeriodicCheck": false
+}

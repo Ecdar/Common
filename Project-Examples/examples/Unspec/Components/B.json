@@ -1,0 +1,57 @@
+{
+	"name": "B",
+	"declarations": "",
+	"locations": [
+		{
+			"id": "L1",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 230,
+			"y": 300,
+			"color": "9",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E0",
+			"group": "",
+			"sourceLocation": "L1",
+			"targetLocation": "L1",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 270,
+					"y": 290,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 270,
+					"y": 310,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 257,
+	"y": 40,
+	"width": 450,
+	"height": 600,
+	"color": "9",
+	"includeInPeriodicCheck": true
+}

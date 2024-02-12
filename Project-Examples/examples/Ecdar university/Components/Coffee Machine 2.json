@@ -1,0 +1,162 @@
+{
+	"name": "Coffee Machine 2",
+	"declarations": "clock y;",
+	"locations": [
+		{
+			"id": "L8",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 125,
+			"y": 77,
+			"color": "4",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L19",
+			"nickname": "",
+			"invariant": "y <= 5",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 125,
+			"y": 220,
+			"color": "4",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 1,
+			"invariantY": 30
+		}
+	],
+	"edges": [
+		{
+			"id": "E17",
+			"group": "",
+			"sourceLocation": "L8",
+			"targetLocation": "L19",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "y = 0",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 165,
+					"y": 127,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 18,
+					"propertyY": -7.5
+				},
+				{
+					"x": 165,
+					"y": 178,
+					"propertyType": "UPDATE",
+					"propertyX": 20,
+					"propertyY": -9
+				}
+			]
+		},
+		{
+			"id": "E18",
+			"group": "",
+			"sourceLocation": "L19",
+			"targetLocation": "L19",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 204,
+					"y": 220,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 204,
+					"y": 255,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E19",
+			"group": "",
+			"sourceLocation": "L8",
+			"targetLocation": "L8",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "y >= 2",
+			"update": "",
+			"sync": "tea",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 209,
+					"y": 77,
+					"propertyType": "GUARD",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 209,
+					"y": 42,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				},
+				{
+					"x": 168,
+					"y": 42,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E20",
+			"group": "",
+			"sourceLocation": "L19",
+			"targetLocation": "L8",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "y >= 4",
+			"update": "",
+			"sync": "cof",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 75,
+					"y": 176,
+					"propertyType": "GUARD",
+					"propertyX": -50,
+					"propertyY": -8
+				},
+				{
+					"x": 75,
+					"y": 127,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -44,
+					"propertyY": -8
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 407,
+	"y": 456,
+	"width": 292,
+	"height": 301,
+	"color": "4",
+	"includeInPeriodicCheck": false
+}

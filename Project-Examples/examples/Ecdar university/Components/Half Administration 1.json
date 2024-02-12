@@ -1,0 +1,239 @@
+{
+	"name": "Half Administration 1",
+	"declarations": "clock x;",
+	"locations": [
+		{
+			"id": "L12",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 70,
+			"y": 118,
+			"color": "2",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L13",
+			"nickname": "",
+			"invariant": "x<=2",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 243,
+			"y": 119,
+			"color": "2",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": -37,
+			"invariantY": -33
+		}
+	],
+	"edges": [
+		{
+			"id": "E37",
+			"group": "",
+			"sourceLocation": "L12",
+			"targetLocation": "L13",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "x=0",
+			"sync": "grant",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 134,
+					"y": 141,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -14,
+					"propertyY": 9
+				},
+				{
+					"x": 179,
+					"y": 141,
+					"propertyType": "UPDATE",
+					"propertyX": -12,
+					"propertyY": 9
+				}
+			]
+		},
+		{
+			"id": "E38",
+			"group": "",
+			"sourceLocation": "L13",
+			"targetLocation": "L12",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 180,
+					"y": 100,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				},
+				{
+					"x": 136,
+					"y": 98,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -14,
+					"propertyY": -24
+				}
+			]
+		},
+		{
+			"id": "E39",
+			"group": "",
+			"sourceLocation": "L13",
+			"targetLocation": "L13",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "patent",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 253,
+					"y": 56,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -18,
+					"propertyY": -24
+				},
+				{
+					"x": 279,
+					"y": 71,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E40",
+			"group": "",
+			"sourceLocation": "L13",
+			"targetLocation": "L13",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "pub",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 301,
+					"y": 105,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -11,
+					"propertyY": -25
+				},
+				{
+					"x": 301,
+					"y": 135,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E41",
+			"group": "",
+			"sourceLocation": "L13",
+			"targetLocation": "L13",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "grant",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 247.89868147120055,
+					"y": 176.73421235253295,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -13,
+					"propertyY": 9
+				},
+				{
+					"x": 277,
+					"y": 160,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E42",
+			"group": "",
+			"sourceLocation": "L12",
+			"targetLocation": "L12",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "pub",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 60,
+					"y": 58,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -10,
+					"propertyY": -27
+				},
+				{
+					"x": 27,
+					"y": 78,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E43",
+			"group": "",
+			"sourceLocation": "L12",
+			"targetLocation": "L12",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "patent",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 61.36710617626648,
+					"y": 177.06315058986814,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -17,
+					"propertyY": 9
+				},
+				{
+					"x": 26,
+					"y": 155,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 556,
+	"y": 497,
+	"width": 329,
+	"height": 220,
+	"color": "2",
+	"includeInPeriodicCheck": false
+}

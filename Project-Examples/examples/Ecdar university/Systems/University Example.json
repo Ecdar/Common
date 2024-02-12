@@ -1,0 +1,76 @@
+{
+	"name": "University Example",
+	"description": "",
+	"x": 590,
+	"y": 402,
+	"width": 540,
+	"height": 410,
+	"color": "5",
+	"systemRootX": 240,
+	"componentInstances": [
+		{
+			"id": 1,
+			"componentName": "Coffee Machine 4",
+			"x": 10,
+			"y": 110
+		},
+		{
+			"id": 3,
+			"componentName": "Researcher",
+			"x": 310,
+			"y": 110
+		},
+		{
+			"id": 5,
+			"componentName": "Half Administration 1",
+			"x": 10,
+			"y": 280
+		},
+		{
+			"id": 6,
+			"componentName": "Half Administration 2",
+			"x": 310,
+			"y": 280
+		}
+	],
+	"operators": [
+		{
+			"id": 2,
+			"type": "composition",
+			"x": 250,
+			"y": 60
+		},
+		{
+			"id": 4,
+			"type": "conjunction",
+			"x": 250,
+			"y": 230
+		}
+	],
+	"edges": [
+		{
+			"child": 2,
+			"parent": 0
+		},
+		{
+			"child": 1,
+			"parent": 2
+		},
+		{
+			"child": 3,
+			"parent": 2
+		},
+		{
+			"child": 4,
+			"parent": 2
+		},
+		{
+			"child": 5,
+			"parent": 4
+		},
+		{
+			"child": 6,
+			"parent": 4
+		}
+	]
+}

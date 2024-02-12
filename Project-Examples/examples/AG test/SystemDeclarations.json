@@ -1,0 +1,4 @@
+{
+	"name": "System Declarations",
+	"declarations": "A1 = A_Good();\nA2 = A_Good();\nG1 = G();\nG2 = G();\n\nsystem Imp, A1, A2, G1, G2;\n\nIO A1 {button1!, button2!, good?, bad?}\nIO A2 {button1!, button2!, good?, bad?}\n\nIO G1 {button1?, button2?, good!, bad!}\nIO G2 {button1?, button2?, good!, bad!}\nIO Imp {button1?, button2?, good!, bad!}"
+}

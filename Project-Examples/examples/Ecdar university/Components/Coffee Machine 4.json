@@ -1,0 +1,190 @@
+{
+	"name": "Coffee Machine 4",
+	"declarations": "clock y;",
+	"locations": [
+		{
+			"id": "L24",
+			"nickname": "",
+			"invariant": "y<=6",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 111.5,
+			"y": 286.5,
+			"color": "7",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 29.5,
+			"invariantY": -7.5
+		},
+		{
+			"id": "L25",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 111.5,
+			"y": 86.5,
+			"color": "7",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E71",
+			"group": "",
+			"sourceLocation": "L24",
+			"targetLocation": "L25",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "y>=4",
+			"update": "",
+			"sync": "cof",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 67.5,
+					"y": 214.5,
+					"propertyType": "GUARD",
+					"propertyX": -50,
+					"propertyY": -7.5
+				},
+				{
+					"x": 67.5,
+					"y": 164.5,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -44,
+					"propertyY": -7.5
+				}
+			]
+		},
+		{
+			"id": "E72",
+			"group": "",
+			"sourceLocation": "L24",
+			"targetLocation": "L25",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "tea",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 155.5,
+					"y": 241.5,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				},
+				{
+					"x": 168.5,
+					"y": 190.5,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 14.5,
+					"propertyY": -7.5
+				},
+				{
+					"x": 155.5,
+					"y": 137.5,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E73",
+			"group": "",
+			"sourceLocation": "L25",
+			"targetLocation": "L24",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "y=0",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 111.5,
+					"y": 206.5,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 12,
+					"propertyY": -7
+				},
+				{
+					"x": 111.5,
+					"y": 176,
+					"propertyType": "UPDATE",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		},
+		{
+			"id": "E74",
+			"group": "",
+			"sourceLocation": "L24",
+			"targetLocation": "L24",
+			"status": "INPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "coin",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 96.5,
+					"y": 331,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -45,
+					"propertyY": -7.5
+				},
+				{
+					"x": 127,
+					"y": 331,
+					"propertyType": "NONE",
+					"propertyX": 0,
+					"propertyY": 0
+				}
+			]
+		},
+		{
+			"id": "E75",
+			"group": "",
+			"sourceLocation": "L25",
+			"targetLocation": "L25",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "y>=2",
+			"update": "",
+			"sync": "tea",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 133,
+					"y": 43.5,
+					"propertyType": "GUARD",
+					"propertyX": 17,
+					"propertyY": -8
+				},
+				{
+					"x": 93,
+					"y": 43.5,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -38,
+					"propertyY": -8
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 443,
+	"y": 429,
+	"width": 220,
+	"height": 356,
+	"color": "7",
+	"includeInPeriodicCheck": false
+}

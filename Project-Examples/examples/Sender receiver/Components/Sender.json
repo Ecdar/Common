@@ -1,0 +1,141 @@
+{
+	"name": "Sender",
+	"declarations": "",
+	"locations": [
+		{
+			"id": "L0",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 190,
+			"y": 50,
+			"color": "9",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L1",
+			"nickname": "",
+			"invariant": "",
+			"type": "INITIAL",
+			"urgency": "NORMAL",
+			"x": 20,
+			"y": 170,
+			"color": "9",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		},
+		{
+			"id": "L5",
+			"nickname": "",
+			"invariant": "",
+			"type": "NORMAL",
+			"urgency": "NORMAL",
+			"x": 20,
+			"y": 50,
+			"color": "9",
+			"nicknameX": 30,
+			"nicknameY": -10,
+			"invariantX": 30,
+			"invariantY": 10
+		}
+	],
+	"edges": [
+		{
+			"id": "E10",
+			"group": "",
+			"sourceLocation": "L1",
+			"targetLocation": "L0",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "c",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 190,
+					"y": 170,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": -40,
+					"propertyY": -30
+				}
+			]
+		},
+		{
+			"id": "E11",
+			"group": "",
+			"sourceLocation": "L0",
+			"targetLocation": "L5",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "c",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 110,
+					"y": 50,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -20
+				}
+			]
+		},
+		{
+			"id": "E12",
+			"group": "",
+			"sourceLocation": "L5",
+			"targetLocation": "L1",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "c",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 70,
+					"y": 120,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		},
+		{
+			"id": "E13",
+			"group": "",
+			"sourceLocation": "L1",
+			"targetLocation": "L5",
+			"status": "OUTPUT",
+			"select": "",
+			"guard": "",
+			"update": "",
+			"sync": "b",
+			"isLocked": false,
+			"nails": [
+				{
+					"x": 20,
+					"y": 120,
+					"propertyType": "SYNCHRONIZATION",
+					"propertyX": 10,
+					"propertyY": -10
+				}
+			]
+		}
+	],
+	"description": "",
+	"x": 5,
+	"y": 5,
+	"width": 210,
+	"height": 190,
+	"color": "9",
+	"includeInPeriodicCheck": false
+}
